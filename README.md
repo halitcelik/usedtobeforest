@@ -1,5 +1,27 @@
 # usedtobeforest.com
+(English below)
+Bu web sitesi daha önce orman olup da yandiktan/yakildiktan sonra insa edilen otelleri listelemeyi amaçlar.
 
+# YAPILACAKLAR
+BACKEND
+- Otel Modeli (isim, booking id, tripadvisor id, insa yili ...)
+- Orman Modeli (Yanan/Yakilan ormanla ilgili bilgiler. Ne ormaniydi, ne kadar alana yayiliyordu, bitki hayvan türleri vs)
+- Resim Modeli (Otelin resmi, Ormanin resmi -Eski hali Yeni hali karsilastirmak için)
+- Address Modeli
+- Bu Modellerle ilgili formlar
+- Deploy etme isi (Fabfile? Pythonanywhere?)
+- Belki bir Otel API bulunabilirse otelle ilgili daha detayli bilgi edinebiliriz.
+
+FRONTEND
+- Hizlica bir github sayfasi açilabilir statik HTML CSS ile (Insanlara en azindan böyle bir site üzerinde çalistigimizi göstermek, belki destek olabilecek olan varsa Github hesabina yönlendirmek için.)
+- CSS kütüphaneleri üzerine tartisalim. (Kullanalim mi? Hangisini? vs...)
+
+# Olsa iyi olur özellikler
+
+
+
+
+# ENGLISH
 This website aims to list all the hotels that used to be forest but burned.
 
 # TODO:
