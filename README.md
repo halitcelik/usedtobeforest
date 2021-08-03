@@ -1,5 +1,7 @@
 # usedtobeforest.com
 (English below)
+
+
 Bu web sitesi daha önce orman olup da yandiktan/yakildiktan sonra insa edilen otelleri listelemeyi amaçlar.
 
 # YAPILACAKLAR
@@ -19,6 +21,8 @@ FRONTEND
 # Olsa iyi olur özellikler
 
 
+
+============================
 
 
 # ENGLISH
