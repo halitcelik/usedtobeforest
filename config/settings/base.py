@@ -2,6 +2,7 @@
 Base settings to build other settings files upon.
 """
 from pathlib import Path
+from django.utils.translation import gettext_lazy as _
 
 import environ
 
@@ -25,7 +26,7 @@ DEBUG = env.bool("DJANGO_DEBUG", False)
 # In Windows, this must be set to your system time zone.
 TIME_ZONE = "UTC"
 # https://docs.djangoproject.com/en/dev/ref/settings/#language-code
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "en"
 # https://docs.djangoproject.com/en/dev/ref/settings/#site-id
 SITE_ID = 1
 # https://docs.djangoproject.com/en/dev/ref/settings/#use-i18n
@@ -72,7 +73,8 @@ THIRD_PARTY_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "tailwind",
-    "theme"
+    "theme",
+    "parler",
 ]
 
 INTERNAL_IPS = [
@@ -80,6 +82,25 @@ INTERNAL_IPS = [
 ]
 
 TAILWIND_APP_NAME = "theme"
+
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en',},
+        {'code': 'tr',},
+    ),
+    'default': {
+        'fallback': 'en',             # defaults to PARLER_DEFAULT_LANGUAGE_CODE
+        'hide_untranslated': False,   # the default; let .active_translations() return fallbacks too.
+    }
+}
+
+
+
+LANGUAGES = (
+    ('en', _("English")),
+    ('tr', _('Turkish')),
+)
 
 LOCAL_APPS = [
     "usedtobeforest.users.apps.UsersConfig",
