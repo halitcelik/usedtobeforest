@@ -16,3 +16,4 @@ django-crispy-forms==1.12.0  # https://github.com/django-crispy-forms/django-cri
 django-redis==5.0.0  # https://github.com/jazzband/django-redis
 django-choices==1.7.2
 django-parler==2.2
+django-filer==2.0.2

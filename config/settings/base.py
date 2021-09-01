@@ -75,7 +75,16 @@ THIRD_PARTY_APPS = [
     "tailwind",
     "theme",
     "parler",
+    'easy_thumbnails',
+    'filer',
+    'mptt',
 ]
+
+LOCAL_APPS = [
+    "usedtobeforest.users",
+    "usedtobeforest.main",
+]
+
 
 INTERNAL_IPS = [
     "127.0.0.1",
@@ -102,11 +111,6 @@ LANGUAGES = (
     ('tr', _('Turkish')),
 )
 
-LOCAL_APPS = [
-    "usedtobeforest.users.apps.UsersConfig",
-    "usedtobeforest.main.apps.MainConfig",
-    # Your stuff: custom apps go here
-]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
